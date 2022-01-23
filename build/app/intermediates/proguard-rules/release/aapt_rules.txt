@@ -1,0 +1,6 @@
+# Referenced at C:\Users\akter\AndroidStudioProjects\test_project_for_apply\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:19
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\akter\AndroidStudioProjects\test_project_for_apply\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:24
+-keep class com.example.test_project_for_apply.MainActivity { <init>(); }
+# Referenced at C:\Users\akter\AndroidStudioProjects\test_project_for_apply\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:19
+-keep class io.flutter.app.FlutterApplication { <init>(); }

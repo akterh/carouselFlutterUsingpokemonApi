@@ -1,0 +1,4 @@
+#Sun Jan 23 15:47:17 BDT 2022
+base.0=C\:\\Users\\akter\\AndroidStudioProjects\\test_project_for_apply\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
