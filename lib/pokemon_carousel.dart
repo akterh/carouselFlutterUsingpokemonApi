@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:test_project_for_apply/repositories/pokemon_repository.dart';
 class Home extends StatefulWidget{
   final  imgList;
   final idList;
   final nameList;
   final weightList;
   final heightList;
-  final typeList1;
-  final typeList2;
+  final typeList;
+
   final Future  pokemonData;
-  Home(this.idList,this.imgList,this.nameList,this.heightList,this.weightList,this.typeList1,this.typeList2,this.pokemonData);
+  Home(this.idList,this.imgList,this.nameList,this.heightList,this.weightList,this.typeList,this.pokemonData);
 
   @override
   State<Home> createState() => _HomeState();
@@ -23,7 +22,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height*.4;
-    final width = MediaQuery.of(context).size.height*.5;
+    // final width = MediaQuery.of(context).size.height*.5;
 
 
 
@@ -145,7 +144,7 @@ class _HomeState extends State<Home> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
 
-                          Text("Type:${widget.typeList1[currentIndex]??""}",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)
+                          Text("Type:${widget.typeList[currentIndex].toString().replaceAll('}', "").replaceAll('{', "")}",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)
                         ],
                       )
                       // ${widget.typeList1[currentIndex]??""}
